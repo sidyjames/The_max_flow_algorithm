@@ -3,7 +3,7 @@ import networkx as nx
 # Création d'un graphe dirigé
 G = nx.DiGraph()
 
-# Demandez à l'utilisateur de saisir les arcs et leurs capacités
+# Saisie des arcs et capacités par l'utilisateur
 print("Entrez les arcs et leurs capacités (source, destination, capacité) :")
 while True:
     user_input = input("Saisissez 'quitter' pour terminer : ")
@@ -13,7 +13,7 @@ while True:
     try:
         source, destination, capacite = user_input.split(',')
         capacite = int(capacite)
-        # Enlever les epaces dans dans source et destination
+        # Enlever les epaces dans source et destination
         G.add_edge(source.strip(), destination.strip(), capacite=capacite)
     except ValueError:
         print("Format invalide.")
