@@ -5,7 +5,9 @@ Son but est de calculer le flux maximum d'un élément à partir d'une source A 
 
 ## Prérequis
 Cet algortithme est implémenté avec la bibiliothèque NetworkX. Vous pouvez installer cette dernière avec la commande suivante : 
+
 pip install networkx
+
 Assurez-vous d'avoir la même version de python installée sur votre pc.
 
 ## Utilisation
